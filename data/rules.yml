@@ -1,0 +1,95 @@
+#Arquivo que contém as regras pré definidas para os diálogos
+version: "3.1"
+
+rules:
+
+- rule: Abrir o menu sempre que o usuario dizer uma mensagem inicial
+  steps:
+  - intent: menu
+  - action: utter_menu
+
+- rule: Abrir o atividade sempre que o usuario solicitar atividade
+  steps:
+  - intent: atividade
+  - action: utter_atividade
+
+- rule: Abrir o suporte sempre que o usuario solicitar suporte
+  steps:
+  - intent: suporte
+  - action: utter_suporte
+
+- rule: Abrir o conteudo sempre que o usuario solicitar conteudo
+  steps:
+  - intent: conteudo
+  - action: utter_conteudo
+
+- rule: Abrir o tipos primitivos sempre que o usuario solicitar tipos primitivos
+  steps:
+  - intent: tiposprimitivos
+  - action: utter_tiposprimitivos
+
+- rule: Abrir o variaveis sempre que o usuario solicitar variaveis
+  steps:
+  - intent: variaveis
+  - action: utter_variaveis
+
+- rule: Abrir estrutura condicionais sempre que o usuario solicitar estrutura condicionais
+  steps:
+  - intent: estruturacondicional
+  - action: utter_estruturacondicional
+
+- rule: Abrir lacos de repeticao sempre que o usuario solicitar laco de repeticao
+  steps:
+  - intent: lacorepeticao
+  - action: utter_lacorepeticao
+
+- rule: Abrir definicao variavel sempre que o usuario solicitar definicao variavel
+  steps:
+  - intent: definicaovariavel
+  - action: utter_definicaovariavel
+
+- rule: Abrir declaracao varivel sempre que o usuario solicitar declaracao varivel
+  steps:
+  - intent: declaracaovariavel
+  - action: utter_declaracaovariavel
+
+- rule: Abrir sintaxe if else sempre que o usuario solicitar sintaxe if else
+  steps:
+  - intent: sintaxeifelse
+  - action: utter_sintaxeifelse
+
+- rule: Abrir exemplos if else sempre que o usuario solicitar exemplos if else
+  steps:
+  - intent: exemplosifelse
+  - action: utter_exemplosifelse
+
+- rule: Abrir laco for sempre que o usuario solicitar laco for
+  steps:
+  - intent: lacofor
+  - action: utter_lacofor
+
+- rule: Abrir laco while sempre que o usuario solicitar laco while
+  steps:
+  - intent: lacowhile
+  - action: utter_lacowhile
+
+- rule: Abrir sintaxe for sempre que o usuario solicitar sintaxe for
+  steps:
+  - intent: sintaxefor
+  - action: utter_sintaxefor
+
+- rule: Abrir exemplo for sempre que o usuario solicitar exemplo for
+  steps:
+  - intent: exemplofor
+  - action: utter_exemplofor
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+

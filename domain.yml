@@ -1,0 +1,269 @@
+version: "3.1"
+
+intents: 
+  - menu
+  - goodbye
+  - conteudo
+  - atividade
+  - suporte
+  - tiposprimitivos
+  - variaveis
+  - estruturacondicional
+  - lacorepeticao
+  - definicaovariavel
+  - declaracaovariavel
+  - sintaxeifelse
+  - exemplosifelse
+  - lacofor
+  - lacowhile
+  - sintaxefor
+  - exemplofor
+
+responses: 
+
+  utter_menu:
+  - text: 
+          "Olá!! Bem vindo ao LPBOT, aqui você encontrará tudo que busca sobre a linguagem de Programação JavaScript!!
+          Para começar *digite* o que deseja pesquisar:
+          #  Dúvidas sobre conteúdo especifico
+          #  Testar seu conhecimento (Atividades)
+          #  Deixar alguma sugestão de melhoria
+          #  Sair"
+
+  utter_goodbye:
+  - text: "Já está de saída?? Que pena, espero que tenha ajudado, volte sempre!!!"
+
+  utter_iamabot:
+  - text: "Eu sou um bot, desenvolvido utilizando o Rasa."
+
+  utter_conteudo:
+  - text: 
+          "Digite a opção referente ao conteúdo da sua dúvidas:
+          #  Tipos primitivos
+          #  Variáveis 
+          #  Estrutura condicional
+          #  Laços de repetição"
+      
+  utter_atividade: 
+  - text: 
+          "Vi que você gosta de desafios, então preparei algumas atividades especialmente para você, escolha o tema que deseja e divirta-se:
+          CONCEITOS GERAIS JAVASCRIPT:
+          https://play.kahoot.it/v2/?quizId=e58ed09d-b52d-4130-a09c-7e0a2bf81ab3
+          DECLARAÇÃO DE VARIÁVEIS:
+          https://quizizz.com/admin/quiz/start_new/59999e3622029e1000cd8947?source=MainHeader&page=QuizPage
+          IF e ELSE: 
+          Etapa ainda em desenvolvimento"
+
+  utter_suporte:
+  - text: "Encontrou algum problema, ou possui alguma sugestão? Mande para gente que iremos analisar!"
+
+  utter_tiposprimitivos:
+  - text: 
+          "Tipos primitivos são os tipos das informações (dados) que toda a linguagem de programação possui.  
+          Os principais tipos primitivos são: Inteiro (int), real (float), Caractere (char) e lógico ou Booleano (boolean). 
+
+          Em JavaScript que é o nosso foco, não existe a necessidade da utilização dos tipos primitivos, já que isso é feito automaticamente. 
+          A principal funcionalidade dos tipos primitivos além de especificar qual tipo de dado será manipulado, é calcular o espaço que esses dados irá ocupar na memória. 
+
+          Exemplos: 
+          *Tipo inteiro (int):* Responsável por guardar os números inteiros, positivos ou negativos. Como por exemplo sua idade (18, 25, 40...).
+
+          *Tipo real (float):* Responsável por guardar os números inteiros e decimais também positivos ou negativos, os famosos números com virgulas (mas que em JavaScript substituímos por ponto). São exemplos de tipos reais ( 3.6   1   5.8    56.3 ...).
+
+          *Tipo caractere (char):* Responsável por guardar apenas uma letra ou símbolo, para isso é necessário utilizar ' ' (aspas simples) antes e depois do caractere. Como por exemplo 'a', 'g', '@'...
+
+          *Tipo lógico/booleano (boolean):* Responsável por guardar informações de verdadeiro ou falso, para isso é utilizado 0 para falso e 1 para verdadeiro, ou, as palavras reservadas *False* para falso e *True* para verdadeiro.
+
+          Para sair e encerrar sua conversa, *digite* *sair*"
+
+  utter_variaveis:
+  - text: 
+          "Dúvidas sobre variáveis, vamos trabalhar nisso :), conte-me mais sobre qual é sua dúvida, *digite* qual opção referente as opções abaixo refere-se a sua dúvida: 
+          # - O que é uma variável?
+          # - Declaração de variáveis"
+
+  utter_estruturacondicional:
+  - text: 
+          "Dúvidas sobre IF/ELSE, vamos trabalhar nisso :), conte-me mais sobre qual é sua dúvida, *digite* qual das opções abaixo refere-se a sua dúvida: 
+          # Sintaxe IF/ELSE
+          # Exemplos de utilização"
+
+  utter_lacorepeticao: 
+  - text: 
+          "*Definição* 
+
+          Laço de repetição em uma linguagem de programação é utilizado para resolver problemas que precisam ser *repetidos* várias vezes. De maneira geral um laço de repetição vai executar um bloco de código até que uma determinada *condição* deixe de ser verdadeira (Se ainda tem duvidas sobre condicionais digite 7 para ver mais sobre esses conteúdos).
+
+          Os dois principais laços de repetições que vamos trabalhar aqui são os laços FOR e WHILE, digite qual opção abaixo deseja saber mais:
+
+          # Laço FOR
+          # Laço While
+
+          Para sair e encerrar sua conversa, *digite* *sair*"
+
+  utter_definicaovariavel:
+  - text: 
+          "Variável é o *nome* dado ao *espaço reservado da memória do computador*, responsável por guardar determinado tipo de informação, para calcular o espaço que esse dado irá ocupar, é utilizado os tipos primitivos de dados.
+
+          Para sair e encerrar sua conversa, *digite* *sair*"
+  
+  utter_declaracaovariavel:
+  - text: 
+          "Para declarar uma variável é utilizado sempre dois passos: 
+
+          1° Passo - Utilizar a palavra reservada da linguagem, em JavaScript utilizamos as palavra *var*, *let* ou *const*. 
+
+          2° Passo - Utilizar um nome valido, para isso precisamos sempre seguir algumas regras básicas durante a escolha do seu nome, são elas:
+
+          *Não utilizar espaço no nome da variável*.
+          *Não utilizar acentos (´, `, ^, ~) ou caracteres especiais (!, ?, °, $, %, &, ()).*
+          *Não utilizar Ç*
+          *Não iniciar com números*
+          *Uma variável é Case Sensitive*, ou seja, se você declarar uma variável Idade não ira conseguir chamar e utilizar ela como idade, já que declarou ela com o i maiúsculo.
+
+          Opcionalmente é sempre bom seguir algumas convenções para dar nome as variáveis:
+
+          *Primeira letra do nome da variável sempre minúscula* 
+          *Sempre utilizar nomes no substantivo*
+ 
+
+          Exemplo de declaração de variável:
+          *JavaScript*   var idade; 
+          *C*   int idade;
+          *Java* int idade;
+
+          Para sair e encerrar sua conversa, *digite* *sair*"
+
+  utter_sintaxeifelse:
+  - text: 
+          ' *DEFINIÇÃO*
+
+          A condicional IF/ELSE é um estrutura condicional que executa determinado comando ou bloco de comandos, quando uma *condição* é verdadeira (IF). Se for falsa (ELSE), executa as afirmações dentro do seu bloco. 
+
+          *Condição* é uma expressão que pode ser avaliada como verdadeira (TRUE) ou falso (FALSE).
+
+          *SINTAXE*
+
+          if (condição) {
+              linhas de códigos caso a condição seja verdadeira
+          }
+          else {
+              linha de códigos caso a condição seja falsa
+          }
+
+          Para sair e encerrar sua conversa, *digite* *sair*'
+
+  utter_exemplosifelse:
+  - text: 
+          'Abaixo alguns exemplos da utilização da estrutura condicional IF/ELSE:
+
+          var nota = 8;
+
+          IF ( nota >= 6) {
+              alert (" Aluno aprovado!! ");
+          }
+          ELSE {
+              alert (" Aluno reprovado! ");
+          }
+
+        Em português essa estrutura condicional simples ficaria da seguinte maneira:
+
+        SE ( variável nota for maior *ou* igual) {
+            Executa o alert e mostra na tela "Aluno aprovado!!"
+        }
+        SENÃO {
+            Executa o alert e mostra na tela "Aluno reprovado!"
+        }
+
+        Para sair e encerrar sua conversa, *digite* *sair*'
+
+  utter_lacofor:
+  - text: 
+          "Digite qual das opções abaixo *numero* você gostaria de saber mais: 
+
+          #   Sintaxe For
+          #   Exemplos de utilização do laço for"
+
+  utter_lacowhile:
+  - text: 
+          '*DEFINIÇÃO*
+
+          Um laço while executa a repetição de um bloco de código *enquanto* uma condição é verdadeira. Para utilizar o laço while é preciso utilizar uma *variável de controle* que será testada na *condição*.
+
+          A variável de controle, necessita ser inicializada previamente antes da execução do laço while.
+
+          *IMPORTANTE* Dentro do laço while é necessário incrementar ou decrementar a variável de controle.
+
+          * SINTAXE*
+
+          var i = 1;   
+
+          while (condição)
+          {
+              código a ser executado enquanto a condição for verdadeira;
+              incremento;
+          }
+
+          *EXEMPLO*
+
+          var i = 1;
+          while(i<=3){
+          nota1 = parseInt(prompt("Informe a primeira nota do aluno: "));
+          nota2 = parseInt(prompt("Informe a segunda nota do aluno: "));
+	        media = (nota1 + nota2) / 2;
+          alert("A nota do aluno é: " + media);
+          i++;
+          }
+
+          *Observação:* 
+          O laço while significa *enquanto* em português, ou seja, enquanto a condição for verdadeira o laço irá continuar sendo executado.
+          O parseInt inserido antes da inserção (prompt) da nota serve para converter o valor inserido de cadeia de caracteres para inteiro (se tiver alguma dúvida sobre tipos primitivos digite 5 para retornar ao conteúdo).
+
+          Para sair e encerrar sua conversa, *digite* *sair*'
+
+  utter_sintaxefor:
+  - text: 
+          "*DEFINIÇÃO*
+
+          Um laço for é executado repetidas vezes enquanto uma condição é verdadeira. Para utilizar o laço for é preciso utilizar uma *expressão inicial*,  uma *condição* e um *incremento*:
+
+          1. A *expressão inicial* é a passagem de um valor inicial para a variável de controle de execução do laço, popularmente chamada de contador. É comum a utilização de uma variável chamada de *i* para exercer essa função de controle. 
+
+          2. A *condição* é responsável por determinar se o laço será ou não executado. 
+
+          3. O *incremento* é responsável por incrementar a variável de controle, toda vez que o laço for executado. *É importante ressaltar que o incremento será executado apenas quando o código inserido dentro do laço for executado.* 
+
+          *SINTAXE*
+
+          for ( expressão inicial ;  condição ;  incremento) 
+          {
+              código a ser executado repetidamente
+          }
+
+          Para sair e encerrar sua conversa, *digite* *sair*"
+
+  utter_exemplofor: 
+  - text: 
+          'Abaixo um exemplo da utilização do laço for para calcular a media de 3 alunos, é possível notar que se fôssemos calcular a media de 3 alunos, teríamos que executar todo o código 3 vezes, o que acabaria levando mais tempo e esforço. 
+
+
+          var i, nota1, nota2, media;
+	
+          for(i=1;i<=3;i++){
+
+    	        nota1 = parseInt(prompt("Informe a primeira nota do aluno: "));
+
+	            nota2 = parseInt(prompt("Informe a segunta nota do aluno: "));
+
+	            media = (nota1 + nota2) / 2;
+
+              alert("A nota do aluno é: " + media);
+          } 
+
+          *Observação:* O parseInt inserido antes da inserção (prompt) da nota serve para converter o valor inserido de cadeia de caracteres para inteiro (se tiver alguma dúvida sobre tipos primitivos digite 5 para retornar ao conteúdo).
+
+          Para sair e encerrar sua conversa, *digite* *sair*'
+
+session_config:
+  session_expiration_time: 60 #tempo para encerrar um conversa (em minutos)
+  carry_over_slots_to_new_session: true

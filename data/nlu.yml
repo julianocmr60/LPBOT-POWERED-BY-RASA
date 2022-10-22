@@ -1,0 +1,130 @@
+#Arquivo com as frases de treinamento de cada intent
+
+version: "3.1"
+
+nlu:
+- intent: menu
+  examples: |
+    - Olá
+    - Ola
+    - Oi
+    - voltar
+    - menu
+    - Opa
+    - Boa tarde
+    - Bom dia
+    - Boa noite
+
+- intent: goodbye
+  examples: |
+    - obrigado
+    - até logo
+    - sair
+    - 4
+    - quatro
+    - tchau
+    - finalizar
+    - acabei
+    - pronto
+
+- intent: atividade
+  examples: |
+    - atividade
+    - exercicios
+    - dois
+    - 02
+    - 2
+
+- intent: suporte
+  examples: |
+    - suporte
+    - três
+    - 3
+    - 03
+    - contribuição
+
+- intent: bot_challenge
+  examples: |
+    - você é um bot?
+    - você é um humano?
+    - Eu estou falando com um bot?
+    - Eu estou falando cim um humano?
+
+- intent: conteudo
+  examples: |
+    - 01
+    - 1
+    - um
+    - conteudo
+    - duvida conteudo
+    - conteudo especifico
+    - especifico
+
+- intent: tiposprimitivos
+  examples: |
+    - tipos primitivos
+    - 5
+    - cinco
+    - 05
+  
+- intent: variaveis
+  examples: |
+    - variaveis
+    - 6
+    - seis
+    - 06
+    - var
+
+- intent: estruturacondicional
+  examples: |
+    - estrutura condicional
+    - estrutura
+    - condicional
+
+- intent: lacorepeticao
+  examples: |
+    - laço de repetição
+    - lacos de repeticao
+    - repeticao
+    - repetição
+
+- intent: definicaovariavel
+  examples: |
+    - o que é uma variavel
+    - definição variavel
+    - definicao variavel
+
+- intent: declaracaovariavel
+  examples: |
+    - declaracao variavel
+    - declaraçao variavel
+
+- intent: sintaxeifelse
+  examples: |
+    - sintaxe if/else
+
+  
+- intent: exemplosifelse
+  examples: |
+    - exemplos if else
+    - exemplos if/else
+
+- intent: lacofor
+  examples: |
+    - laço for
+    - laco for
+
+- intent: lacowhile
+  examples: |
+    - laço while
+    - while
+    - laco while
+
+- intent: sintaxefor
+  examples: |
+    - sintaxe for
+
+- intent: exemplofor
+  examples: |
+    - exemplos for
+    - exemplo for
